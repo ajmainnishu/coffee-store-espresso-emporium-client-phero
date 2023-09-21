@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div className="bg-[url('./src/assets/images/header/header-banner.png')] py-72 bg-cover bg-center">
+        <div className="bg-[url('./src/assets/images/header/header-banner.png')] py-72 bg-cover bg-center bg-no-repeat">
             <div className="grid grid-cols-2">
                 <div></div>
                 <div className="text-white">

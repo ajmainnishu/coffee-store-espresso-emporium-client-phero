@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'rancho': ['Rancho', 'cursive'],
         'raleway': ['Raleway', 'sans-serif']
+      },
+      backgroundSize: {
+        '100%': '100% 100%'
       }
     },
   },

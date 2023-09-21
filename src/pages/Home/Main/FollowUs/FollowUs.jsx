@@ -11,7 +11,7 @@ const FollowUs = () => {
     return (
         <div className='py-32'>
             <p className='text-center text-xl text-[#1B1A1A]'>Follow Us Now</p>
-            <h2 className='text-[#331A15] font-rancho text-center text-5xl mb-12 mt-2'>Follow on Instagram</h2>
+            <h2 className='text-[#331A15] font-rancho text-center text-6xl mb-12 mt-2'>Follow on Instagram</h2>
             <div className='grid grid-cols-4 gap-6 w-4/6 mx-auto'>
                 <img className='w-full' src={instagramPhoto1} alt="" />
                 <img className='w-full' src={instagramPhoto2} alt="" />

@@ -7,7 +7,7 @@ const ViewCoffee = () => {
     return (
         <div className='addcoffee-b bg-[url("./src/assets/images/addCoffee/addcoffee-bg.png")] bg-contain bg-no-repeat'>
             <div className="w-4/6 mx-auto pb-32 pt-12">
-                <Link to='/' className="text-[#374151] font-rancho text-3xl mb-12 drop-shadow-lg flex items-center gap-x-4"><FaArrowLeft className='text-xl' />Back To home</Link>
+                <Link to='/' className="text-[#374151] font-rancho text-3xl mb-12 drop-shadow-lg flex items-center gap-x-4 hover:bg-[#D2B48C] hover:inline-flex"><FaArrowLeft className='text-xl' />Back To home</Link>
                 <div className="grid grid-cols-2 py-16 px-44 bg-[#F4F3F0] rounded-md items-center">
                     <div>
                         <img className='w-full' src={photo ? photo : 'Not Available'} alt="coffee image" />

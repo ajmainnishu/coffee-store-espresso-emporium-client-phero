@@ -14,7 +14,7 @@ const Product = ({ coffee, handleDelete }) => {
                 </div>
                 <div className='flex flex-col gap-y-4'>
                     <Link to={`/view-coffees/${_id}`} className='bg-[#D2B48C] rounded-md p-2.5'><FaEye className='text-white text-lg' /></Link>
-                    <Link className='bg-[#3C393B] rounded-md p-2.5'><FaPen className='text-white text-lg' /></Link>
+                    <Link to={`/update-coffees/${_id}`} className='bg-[#3C393B] rounded-md p-2.5'><FaPen className='text-white text-lg' /></Link>
                     <Link onClick={() => handleDelete(_id)} className='bg-[#EA4744] rounded-md p-2.5'><FaArchive className='text-white text-lg' /></Link>
                 </div>
             </div>

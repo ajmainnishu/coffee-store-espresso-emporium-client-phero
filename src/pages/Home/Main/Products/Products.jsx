@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaCoffee } from 'react-icons/fa';
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 const Products = () => {
     const [coffees, setCoffees] = useState([]);
@@ -29,8 +29,8 @@ const Products = () => {
                     .then(data => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
-                                'Deleted!',
-                                'Your file has been deleted.',
+                                'Good Luck !!!',
+                                'Deleted coffee details',
                                 'success'
                             )
                         }

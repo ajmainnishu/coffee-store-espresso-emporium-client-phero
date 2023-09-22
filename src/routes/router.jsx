@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home/Home";
 import AddCoffees from "../pages/AddCoffees/AddCoffees";
 import UpdateCoffees from "../pages/UpdateCoffees/UpdateCoffees";
+import ViewCoffee from "../pages/ViewCoffee/ViewCoffee";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
             {
                 path: 'update-coffees',
                 element: <UpdateCoffees />
+            },
+            {
+                path: 'view-coffees/:id',
+                element: <ViewCoffee />,
+                loader: ({params}) => fetch(`http://localhost:5000/coffees/${params.id}`)
             }
         ]
     }

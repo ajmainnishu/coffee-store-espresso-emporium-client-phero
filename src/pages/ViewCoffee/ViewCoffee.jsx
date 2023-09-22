@@ -13,7 +13,7 @@ const ViewCoffee = () => {
             <div className="w-4/6 mx-auto pb-32 pt-12">
                 {/* home page button */}
                 <Link to='/' className="text-[#374151] font-rancho text-3xl mb-12 drop-shadow-lg flex items-center gap-x-4 hover:bg-[#D2B48C] hover:inline-flex"><FaArrowLeft className='text-xl' />Back To home</Link>
-                <div className="grid grid-cols-2 py-16 px-44 bg-[#F4F3F0] rounded-md items-center">
+                <div className="grid lg:grid-cols-2 py-16 lg:px-44 px-10 bg-[#F4F3F0] rounded-md items-center">
                     <div>
                         <img className='w-full' src={photo ? photo : 'Not Available'} alt="coffee image" />
                     </div>

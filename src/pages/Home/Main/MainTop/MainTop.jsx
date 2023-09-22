@@ -6,7 +6,7 @@ import icons4 from '../../../../assets/images/mainTop/4.png'
 const MainTop = () => {
     return (
         <div className='bg-[#ECEAE3]'>
-            <div className='grid grid-cols-4 gap-x-10 w-4/6 mx-auto py-14'>
+            <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-10 w-4/6 mx-auto py-14'>
                 <div>
                     <img src={icons1} alt="" />
                     <h2 className='text-[#331A15] font-rancho text-4xl mt-4 mb-2'>Awesome Aroma</h2>

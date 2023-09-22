@@ -12,15 +12,15 @@ const FollowUs = () => {
         <div className='py-32'>
             <p className='text-center text-xl text-[#1B1A1A]'>Follow Us Now</p>
             <h2 className='text-[#331A15] font-rancho text-center text-6xl mb-12 mt-2'>Follow on Instagram</h2>
-            <div className='grid grid-cols-4 gap-6 w-4/6 mx-auto'>
-                <img className='w-full' src={instagramPhoto1} alt="" />
-                <img className='w-full' src={instagramPhoto2} alt="" />
-                <img className='w-full' src={instagramPhoto3} alt="" />
-                <img className='w-full' src={instagramPhoto4} alt="" />
-                <img className='w-full' src={instagramPhoto5} alt="" />
-                <img className='w-full' src={instagramPhoto6} alt="" />
-                <img className='w-full' src={instagramPhoto7} alt="" />
-                <img className='w-full' src={instagramPhoto8} alt="" />
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-6 w-4/6 mx-auto'>
+                <img className='w-full' src={instagramPhoto1} alt="photos" />
+                <img className='w-full' src={instagramPhoto2} alt="photos" />
+                <img className='w-full' src={instagramPhoto3} alt="photos" />
+                <img className='w-full' src={instagramPhoto4} alt="photos" />
+                <img className='w-full' src={instagramPhoto5} alt="photos" />
+                <img className='w-full' src={instagramPhoto6} alt="photos" />
+                <img className='w-full' src={instagramPhoto7} alt="photos" />
+                <img className='w-full' src={instagramPhoto8} alt="photos" />
             </div>
         </div>
     );

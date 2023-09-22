@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import useTitle from '../../hooks/useTitle';
 
 const AddCoffees = () => {
+    // title dynamic name
+    useTitle('Add Coffees')
+    // coffee add button
     const handleAddCoffee = event => {
         event.preventDefault();
         const form = event.target;
@@ -25,6 +29,7 @@ const AddCoffees = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
+                    // modal
                     Swal.fire(
                         'Add Coffee',
                         'Your added coffess data successfully',
@@ -43,12 +48,14 @@ const AddCoffees = () => {
                     <p className="text-lg text-center text-[#1B1A1A] opacity-70 px-20 py-8">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                     <form onSubmit={handleAddCoffee}>
                         <div className="flex gap-x-6 items-center mb-6">
+                            {/* name */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Name</span>
                                 </label>
                                 <input type="text" name="name" placeholder="Enter coffee name" className="input input-bordered w-full" />
                             </div>
+                            {/* chef */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Chef</span>
@@ -57,12 +64,14 @@ const AddCoffees = () => {
                             </div>
                         </div>
                         <div className="flex gap-x-6 items-center mb-6">
+                            {/* supplier */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Supplier</span>
                                 </label>
                                 <input type="text" name="supplier" placeholder="Enter coffee supplier" className="input input-bordered w-full" />
                             </div>
+                            {/* taste */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Taste</span>
@@ -71,12 +80,14 @@ const AddCoffees = () => {
                             </div>
                         </div>
                         <div className="flex gap-x-6 items-center mb-6">
+                            {/* category */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Category</span>
                                 </label>
                                 <input type="text" name="category" placeholder="Enter coffee category" className="input input-bordered w-full" />
                             </div>
+                            {/* details */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Details</span>
@@ -85,12 +96,14 @@ const AddCoffees = () => {
                             </div>
                         </div>
                         <div className="flex gap-x-6 items-center mb-6">
+                            {/* photo url */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Photo</span>
                                 </label>
                                 <input type="text" name="photo" placeholder="Enter photo URL" className="input input-bordered w-full" />
                             </div>
+                            {/* price */}
                             <div className="form-control w-full">
                                 <label className="pb-4">
                                     <span className="text-xl font-semibold opacity-80">Price</span>
@@ -98,6 +111,7 @@ const AddCoffees = () => {
                                 <input type="text" name="price" placeholder="Enter coffee price" className="input input-bordered w-full" />
                             </div>
                         </div>
+                        {/* button */}
                         <div className="text-center">
                             <button className="font-rancho text-[#331A15] text-2xl w-full py-3.5 border-2 border-[#331A15] rounded-md bg-[#D2B48C]">Add Coffee</button>
                         </div>

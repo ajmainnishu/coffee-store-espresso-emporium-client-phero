@@ -1,9 +1,7 @@
-
-
 const Contact = () => {
     return (
         <div>
-            <h2 className="font-rancho text-[#331A15] text-5xl mb-8 drop-shadow-lg">Connect with Us</h2>
+            <h2 className="font-rancho text-[#331A15] text-5xl mb-8 mt-8 lg:mt-0 drop-shadow-lg">Connect with Us</h2>
             <div>
                 <input type="text" placeholder="Name" className="input w-full mb-4" />
                 <input type="email" placeholder="Email" className="input w-full mb-4" />

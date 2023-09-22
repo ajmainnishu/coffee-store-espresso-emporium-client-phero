@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import AddCoffees from "../pages/AddCoffees/AddCoffees";
 import UpdateCoffees from "../pages/UpdateCoffees/UpdateCoffees";
 import ViewCoffee from "../pages/ViewCoffee/ViewCoffee";
+import Empty from "../pages/404/Empty";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                 path: 'view-coffees/:id',
                 element: <ViewCoffee />,
                 loader: ({params}) => fetch(`http://localhost:5000/coffees/${params.id}`)
+            },
+            {
+                path: '*',
+                element: <Empty></Empty>
             }
         ]
     }
